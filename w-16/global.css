@@ -1,0 +1,27 @@
+header {
+    width: 100%;
+    position: fixed;
+    background-color: #2d545e;
+    color: white;
+    z-index: 10;
+}
+
+header img {
+    border-radius: 50%;
+    width: 70px;
+    height: 50px;
+    float: left;
+}
+
+
+.himg{
+    width: 60px;
+    height: 50px;
+}
+
+main {
+    overflow: auto;
+    height: 1600px;
+    background-color: #f3dec9;
+    font-family: Arial, Helvetica, sans-serif
+}

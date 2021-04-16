@@ -1,0 +1,390 @@
+.Slide-Show {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #23e3c9;
+}
+
+.container {
+    margin: auto;
+    position: relative;
+    width: 100%;
+    height: 1000px;
+}
+
+.slider {
+    position: absolute;
+    width: 98.5%;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+    top: 10px;
+    left: 0;
+    margin: 0 10px;
+    border-radius: 30px;
+    box-shadow: 25px 25px 25px -25px black;
+}
+
+.slides {
+    width: 500%;
+    height: 500px;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 20%;
+    transition: 2s;
+}
+
+.slide div {
+    width: 100%;
+    height: 500px;
+    background-color: lawngreen;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.slide img{
+    width: 100%;
+    height: 500px;
+    
+}
+
+.manual_navigation {
+    position: absolute;
+    width: 98.5%;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual_btn {
+    border: 1px solid goldenrod;
+    opacity: 0;
+    padding: 3px;
+    width: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual_btn:not(:last-child) {
+    margin-right: 40px;
+}
+
+.manual_btn:hover {
+    background: goldenrod;
+    opacity: unset;
+    transform: rotate(90deg);
+}
+
+#radio1:checked~.first {
+    margin-left: 0;
+}
+
+#radio2:checked~.first {
+    margin-left: -20%;
+}
+
+#radio3:checked~.first {
+    margin-left: -40%;
+}
+
+#radio4:checked~.first {
+    margin-left: -60%;
+}
+
+.navigation_auto {
+    position: absolute;
+    display: flex;
+    width: 98.5%;
+    justify-content: center;
+    margin-top: 460px;
+}
+
+.navigation_auto div {
+    border: 1px solid goldenrod;
+    width: 20px;
+    padding: 3px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.navigation_auto div:not(:last-child) {
+    margin-right: 40px;
+}
+
+#radio1:checked~.navigation_auto .auto_btn1 {
+    background: goldenrod;
+    transform: rotate(90deg);
+}
+
+#radio2:checked~.navigation_auto .auto_btn2 {
+    background: goldenrod;
+    transform: rotate(90deg);
+}
+
+#radio3:checked~.navigation_auto .auto_btn3 {
+    background: goldenrod;
+    transform: rotate(90deg);
+}
+
+#radio4:checked~.navigation_auto .auto_btn4 {
+    background: goldenrod;
+    transform: rotate(90deg);
+}
+
+.mini-Slider {
+    position: absolute;
+    width: 300px;
+    height: 600px;
+    border-radius: 10px;
+    overflow: hidden;
+    top: 250px;
+    left: 50px;
+    border-radius: 20px;
+    box-shadow: 25px 25px 25px -25px black;
+    z-index: 1;
+}
+
+.mini-slides {
+    width: 500%;
+    height: 600px;
+    display: flex;
+}
+
+.mini-slides input {
+    display: none;
+}
+
+.mini-slide {
+    width: 20%;
+    transition: 2s;
+}
+
+.mini-slide div {
+    width: 100%;
+    height: 600px;
+    background-color: red;
+    text-align: center;
+    padding: 50% 0;
+}
+
+.mini-slide img{
+    width: 100%;
+    height: 600px;
+}
+.mini-manual_navigation {
+    position: absolute;
+    width: 200px;
+    margin-top: -10px;
+    display: none;
+    justify-content: center;
+}
+
+.mini-manual_btn {
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.mini-manual_btn:not(:last-child) {
+    margin-right: 20px;
+}
+
+.mini-manual_btn:hover {
+    background: #40d3dc;
+}
+
+#mini-radio1:checked~.second {
+    margin-left: 0;
+}
+
+#mini-radio2:checked~.second {
+    margin-left: -20%;
+}
+
+#mini-radio3:checked~.second {
+    margin-left: -40%;
+}
+
+#mini-radio4:checked~.second {
+    margin-left: -60%;
+}
+
+.mini-navigation_auto {
+    position: absolute;
+    display: flex;
+    width: 200px;
+    justify-content: center;
+    margin-top: 460px;
+}
+
+.mini-navigation_auto div {
+    display: none;
+    /* border: 2px solid #40d3dc;
+    padding: 5px;
+    border-radius: 10px; */
+    transition: 1s;
+}
+
+.mini-navigation_auto div:not(:last-child) {
+    margin-right: 20px;
+}
+
+#mini-radio1:checked~.mini-navigation_auto .mini-auto_btn1 {
+    background: #40d3dc;
+}
+
+#mini-radio2:checked~.mini-navigation_auto .mini-auto_btn2 {
+    background: #40d3dc;
+}
+
+#mini-radio3:checked~.mini-navigation_auto .mini-auto_btn3 {
+    background: #40d3dc;
+}
+
+#mini-radio4:checked~.mini-navigation_auto .mini-auto_btn4 {
+    background: #40d3dc;
+}
+
+.depature {
+    display: inline-block;
+    background-color: blue;
+    width: 10%;
+    height: 5px;
+    border: double 2px blue;
+    z-index: 1;
+}
+
+h3 {
+    text-align: left;
+    justify-content: left;
+    margin-left: 2px;
+    font-weight: bolder;
+    color: brown;
+}
+
+.book {
+    position: absolute;
+    background: white;
+    border-radius: 20px;
+    border: 1px dashed yellow;
+    top: 1000px;
+    width: 60%;
+    font: large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-left: 500px;
+    margin-top: -100px;
+}
+
+.radio {
+    padding: 10px 10px 0 50px;
+    width: 200%;
+    margin: 10px 0px 2px 20px;
+    border-radius: 5px;
+    box-shadow: -10px 16px 16px -16.2px #333;
+}
+
+.form-control[type="radio"] {
+    display: inline-block;
+    width: 20px;
+    margin-left: 10px;
+}
+
+.depat-dest {
+    display: inline-block;
+    width: 200%;
+    /* border: 2px dashed black; */
+    margin-top: 20px;
+}
+
+.depat-dest .form-control {
+    display: inline-block;
+    width: 200px;
+    margin: 0 0 0 50px;
+}
+
+.date {
+    display: inline-block;
+    width: 200%;
+    opacity: .8;
+}
+
+.depart {
+    display: block;
+    float: left;
+    text-align: left;
+    margin: 20px 10px 10px 90px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 2px;
+}
+
+.depart input {
+    border: none;
+}
+
+.depart label {
+    margin-bottom: -10px;
+    opacity: 0.8;
+}
+
+.return {
+    display: block;
+    float: left;
+    text-align: left;
+    margin: 20px 10px 10px 40px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 2px;
+}
+
+.return input {
+    border: none;
+}
+
+.return label {
+    margin-bottom: -10px;
+}
+
+.premium {
+    display: inline-block;
+    margin-left: 50px;
+    width: 200%;
+    justify-content: center;
+    text-align: center;
+}
+
+#buss {
+    display: block;
+    float: left;
+    margin-top: 10px;
+    margin-left: 50px;
+    width: 10px;
+}
+
+#buss-label {
+    display: block;
+    float: left;
+    width: 20px;
+    margin-top: 10px;
+    margin-left: 0px;
+    border: none;
+}
+
+.btn {
+    margin-left: 300px;
+    margin-bottom: 30px;
+}
