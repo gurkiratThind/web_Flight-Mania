@@ -1,3 +1,4 @@
+# Flight Mania
 Make sure to change password on your side along with username for databas(SQL)<br>
 Change should be only made in sqldb file.<br>
 Note you should have Following table in database:<br>
